@@ -1,0 +1,105 @@
+#footerBottom {
+  background: url("/images/RainbowWavesBackground-01.svg") center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 1000px;
+  width: 100%;
+  bottom: 0;
+  margin-top: -1000px;
+  z-index: -1;
+}
+
+#footer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  .footerWrapper {
+    width: 100%;
+    align-self: flex-end;
+    margin-bottom: 3vw;
+
+    .footerUpper {
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 5rem;
+      align-items: center;
+
+      h1 {
+        font-size: clamp(1.5rem, 3vw, 3rem);
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      .footerLinks {
+        display: flex;
+        align-items: center;
+
+        button {
+          font-size: clamp(1.5rem, 3vw, 2.5rem);
+          padding: 0.2rem 0.5rem;
+          border: 4px outset #dac426;
+          background: transparent;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+          transition: all 650ms;
+          font-family: "Times New Roman", Times, serif;
+
+          &:hover {
+            box-shadow: 1px 1px 20px rgba(245, 218, 122, 0.4);
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              120deg,
+              transparent,
+              rgba(245, 218, 122, 0.4),
+              transparent
+            );
+            transition: all 650ms;
+          }
+
+          &:hover:before {
+            left: 100%;
+          }
+        }
+        div {
+          margin-left: 4rem;
+          .fab {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            margin-left: 2vw;
+            cursor: pointer;
+            transition: 0.3s ease-out;
+          }
+          .fab:hover {
+            color: rgba($color: #dac426, $alpha: 0.9);
+          }
+        }
+      }
+    }
+    .footerB {
+      @include hide;
+      font-size: 3rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+      position: absolute;
+      transform: translateY(-70px);
+      width: fit-content;
+      transition: all 0.3s ease-out 0.5s;
+      color: inherit;
+    }
+    .footerLower {
+      text-align: center;
+      letter-spacing: 1px;
+    }
+  }
+}

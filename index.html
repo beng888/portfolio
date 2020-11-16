@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Document</title>
+  </head>
+  <div style="overflow-x: hidden">
+    <body id="body">
+      <div id="start" class="scrollspy"></div>
+      <nav id="navbar">
+        <div id="logo" class="logo logoAnimate">
+          <a href="#start">
+            <span id="b">B</span><span id="e">e</span><span id="n">n</span
+            ><span id="g">g</span>
+          </a>
+        </div>
+        <div
+          class="email"
+          onclick="window.open('mailto:lawrenceardosa@gmail.com');"
+        >
+          <i class="far fa-envelope"></i>
+          <p>lawrenceardosa@gmail.com</p>
+        </div>
+      </nav>
+      <h1 class="hi">Hi</h1>
+
+      <menu id="list-group">
+        <a class="list-group-item" style="--bgcolor: #e79e2d" href="#start"
+          ><i class="fas fa-igloo"></i
+        ></a>
+        <a class="list-group-item" style="--bgcolor: #367180" href="#projects"
+          ><i class="fas fa-laptop-code"></i
+        ></a>
+        <a
+          class="list-group-item"
+          style="--bgcolor: #6cc077"
+          href="#beforeAbout"
+          ><i class="fas fa-user-ninja"></i
+        ></a>
+        <a class="list-group-item" style="--bgcolor: #dac426" href="#footer"
+          ><i class="fas fa-comment-dots"></i
+        ></a>
+      </menu>
+      <h1 class="name">
+        <p>
+          I'm
+          <a class="scrollLinks lawrence" href="#about">
+            <span data-text="Lawrence">Lawrence</span> </a
+          >Ardosa
+        </p>
+        <p>Front-End Developer</p>
+      </h1>
+      <h2 class="intro">
+        Below are some of the
+        <a class="scrollLinks" href="#projects"
+          ><span data-text="Projects">Projects</span></a
+        >
+        I've made,
+        <a class="scrollLinks" href="#footer"
+          ><span data-text="Contact">Contact</span></a
+        >
+        me and let me know what you think of them.
+      </h2>
+      <section id="sectionone" class="showcase">
+        <div id="scene">
+          <div data-depth="0.1" class="dots">
+            <img src="images/linedots.svg" alt="" />
+          </div>
+          <div data-depth="0.2" class="paint">
+            <img src="images/paint-palette.svg" alt="" />
+          </div>
+          <div data-depth="0.3" class="splash">
+            <img src="images/splash.svg" alt="" class="blue" />
+          </div>
+          <div data-depth="0.3" class="splash">
+            <img src="images/stain.svg" alt="" class="green" />
+          </div>
+          <div data-depth="0.15" class="splash">
+            <img src="images/splashred.svg" alt="" class="red" />
+          </div>
+        </div>
+      </section>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close"><p>&times;</p></span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+      </div>
+
+      <section id="projects" class="scrollspy">
+        <div class="skewElem tabbable">
+          <img
+            class="mainImg"
+            src="images/portfolio1.png"
+            alt=""
+            loading="lazy"
+          />
+          <div class="projectTitle">
+            <h1>My Portfolio</h1>
+            <div class="buttons">
+              <a href="/" target="_blank" class="btn"
+                ><i class="fab fa-github-square"></i
+              ></a>
+              <a
+                class="btn infoContainer tabbable"
+                data-tooltip="This is my first portfolio website I've made with html, SCSS, vanilla javascript, GSAP and a parallax library"
+              >
+                <i class="fas fa-circle-notch"></i><i class="fas fa-info"></i>
+              </a>
+            </div>
+
+            <div class="technologies"><i class="fab fa-js-square"></i></div>
+            <div class="firstContainer imageContainer">
+              <img
+                class="firstImage popImg"
+                src="images/portfolio2.png"
+                alt="Tablet Portrait"
+                loading="lazy"
+              />
+              <i class="fab fa-sass"></i>
+            </div>
+            <div class="secondContainer imageContainer">
+              <img
+                class="secondImage popImg"
+                src="images/portfolio4.png"
+                alt="Mobile Landscape"
+                loading="lazy"
+              />
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="thirdContainer imageContainer">
+              <img
+                class="thirdImage popImg"
+                src="images/portfolio3.png"
+                alt="Mobile Portrait"
+                loading="lazy"
+              />
+              <i class="fab fa-html5"></i>
+            </div>
+          </div>
+          <div class="projectNameContainer">
+            <p>
+              <span class="projectName" data-text="My Portfolio"
+                >My Portfolio</span
+              >/>
+            </p>
+          </div>
+        </div>
+        <div class="skewElem tabbable">
+          <img class="mainImg" src="images/store1.png" alt="" loading="lazy" />
+          <div class="projectTitle">
+            <h1>HolidayHikes</h1>
+            <div class="buttons">
+              <a
+                href="http://holidayhikers.herokuapp.com/"
+                target="_blank"
+                class="btn btn-danger link"
+                >Go to Page</a
+              >
+              <a href="/" target="_blank" class="btn home"
+                ><i style="color: #367180" class="fas fa-home"></i
+              ></a>
+              <a href="/" target="_blank" class="btn"
+                ><i class="fab fa-github-square"></i
+              ></a>
+
+              <a
+                class="btn infoContainer tabbable"
+                data-tooltip="An e-commerce like booking site for hiking enthusiasts that have features such as user sign-in, add to cart, checkout, and filter search, it's made with the mern-stack, ant-design and a few other libraries."
+              >
+                <i class="fas fa-circle-notch"></i><i class="fas fa-info"></i>
+              </a>
+            </div>
+
+            <div class="technologies">
+              <img src="/images/mern.svg" class="fab technology" />
+            </div>
+            <div class="firstContainer imageContainer">
+              <img
+                class="firstImage popImg"
+                src="images/store2.png"
+                alt="Tablet Portrait"
+                loading="lazy"
+              />
+              <img src="/images/ant.svg" alt="" class="fab icon" />
+            </div>
+            <div class="secondContainer imageContainer">
+              <img
+                class="secondImage popImg"
+                src="images/store4.png"
+                alt="Mobile Landscape"
+                loading="lazy"
+              />
+              <i class="fab fa-paypal"></i>
+            </div>
+            <div class="thirdContainer imageContainer">
+              <img
+                class="thirdImage popImg"
+                src="images/store3.png"
+                alt="Mobile Portrait"
+                loading="lazy"
+              />
+              <img src="/images/axios.svg" alt="" class="fab icon" />
+            </div>
+          </div>
+          <div class="projectNameContainer">
+            <p>
+              <span class="projectName" data-text="HolidayHikes"
+                >HolidayHikes</span
+              >/>
+            </p>
+          </div>
+        </div>
+        <div class="skewElem tabbable">
+          <img class="mainImg" src="images/movie1.png" alt="" loading="lazy" />
+          <div class="projectTitle">
+            <h1>MovieTrailers</h1>
+            <div class="buttons">
+              <a
+                href="https://mernmovietrailers.herokuapp.com/"
+                target="_blank"
+                class="btn btn-danger link"
+                >Go to Page</a
+              >
+              <a href="/" target="_blank" class="btn home"
+                ><i style="color: #6cc077" class="fas fa-home"></i
+              ></a>
+              <a href="/" target="_blank" class="btn"
+                ><i class="fab fa-github-square"></i
+              ></a>
+
+              <a
+                class="btn infoContainer tabbable"
+                data-tooltip="This website uses 
+                The Movie Database (TMDb) api as its core, its main feature is playing movie trailers hence its name, the user can also search movies by genres and view a handful of information about it, be able to comment on it or add it to your favorites list! it is made with the mern-stack, bootstrap etc."
+              >
+                <i class="fas fa-circle-notch"></i><i class="fas fa-info"></i>
+              </a>
+            </div>
+
+            <div class="technologies">
+              <img src="/images/mern.svg" class="fab technology" />
+            </div>
+            <div class="firstContainer imageContainer">
+              <img
+                class="firstImage popImg"
+                src="images/movie2.png"
+                alt="Tablet Portrait"
+                loading="lazy"
+              />
+              <img src="/images/redux.png" class="fab icon" />
+            </div>
+            <div class="secondContainer imageContainer">
+              <img
+                class="secondImage popImg"
+                src="images/movie4.png"
+                alt="Mobile Landscape"
+                loading="lazy"
+              />
+              <img src="/images/tmdb.png" class="fab icon" />
+            </div>
+            <div class="thirdContainer imageContainer">
+              <img
+                class="thirdImage popImg"
+                src="images/movie3.png"
+                alt="Mobile Portrait"
+                loading="lazy"
+              />
+              <i class="fab fa-bootstrap"></i>
+            </div>
+          </div>
+          <div class="projectNameContainer">
+            <p>
+              <span class="projectName" data-text="MovieTrailers"
+                >MovieTrailers</span
+              >/>
+            </p>
+          </div>
+        </div>
+        <div class="skewElem tabbable">
+          <img
+            class="mainImg"
+            src="images/restaurant1.png"
+            alt=""
+            loading="lazy"
+          />
+          <div class="projectTitle">
+            <h1>Wine Ebisuke</h1>
+            <div class="buttons">
+              <a
+                href="https://wine-ebisuke-98dbd.web.app/"
+                target="_blank"
+                class="btn btn-danger link"
+                >Go to Page</a
+              >
+              <a href="/" target="_blank" class="btn home"
+                ><i style="color: #dac426" class="fas fa-home"></i
+              ></a>
+              <a href="/" target="_blank" class="btn"
+                ><i class="fab fa-github-square"></i
+              ></a>
+
+              <a
+                class="btn infoContainer tabbable"
+                data-tooltip="This is a simple japanese restaurant website showcasing its specialties, it provides the most fundamental informations like Menu, Reservations and so on, it is made with React JS, Styled-Components and Material UI"
+              >
+                <i class="fas fa-circle-notch"></i><i class="fas fa-info"></i>
+              </a>
+            </div>
+
+            <div class="technologies"><i class="fab fa-react"></i></div>
+            <div class="firstContainer imageContainer">
+              <img
+                class="firstImage popImg"
+                src="images/restaurant2.png"
+                alt="Tablet Portrait"
+                loading="lazy"
+              />
+              <img src="/images/visual-studio-code-1.svg" class="fab icon" />
+            </div>
+            <div class="secondContainer imageContainer">
+              <img
+                class="secondImage popImg"
+                src="images/restaurant3.png"
+                alt="Mobile Landscape"
+                loading="lazy"
+              />
+              <img src="/images/styledComponents.png" class="fab icon" />
+            </div>
+            <div class="thirdContainer imageContainer">
+              <img
+                class="thirdImage popImg"
+                src="images/restaurant4.png"
+                alt="Mobile Portrait"
+                loading="lazy"
+              />
+              <img src="/images/materialUI.png" class="fab icon" />
+            </div>
+          </div>
+          <div class="projectNameContainer">
+            <p>
+              <span
+                id="beforeAbout"
+                class="projectName"
+                data-text="Wine Ebisuke"
+                >Wine Ebisuke</span
+              >/>
+            </p>
+          </div>
+        </div>
+
+        <div class="shape-blob one"></div>
+        <div class="shape-blob two"></div>
+        <div class="shape-blob three"></div>
+        <div class="shape-blob four"></div>
+        <div class="shape-blob five"></div>
+      </section>
+
+      <section id="about" class="scrollspy">
+        <div>
+          <h1>About Me</h1>
+          <h2><i class="fas fa-bone"></i>&nbsp; a bit of context</h2>
+          <br />
+          <p>
+            If you have stopped here before anything else, thanks for your
+            interest. Let me introduce myself again. I'm Lawrence Ardosa and I
+            am an aspiring Front-End developer.
+          </p>
+          <p>
+            I am fascinated on the complexity of web development, its ability
+            and flexibility to create interactions with seemingly innumerable
+            ways to make user interfaces that unlike man made structures stand's
+            the test of time and weathering.
+          </p>
+          <p>
+            My hobbies are hiking, biking, and working out, among other things,
+            I take greater interest in learning new things, challenges are what
+            stimulates people beyond learning, so hit me up if you've got
+            something for me.
+          </p>
+        </div>
+        <img src="/images/man.svg" alt="" />
+      </section>
+      <section id="footer" class="scrollspy">
+        <div class="footerWrapper">
+          <div class="footerUpper">
+            <h1>Got some work for me?</h1>
+            <div class="footerLinks">
+              <button onclick="window.open('mailto:lawrenceardosa@gmail.com');">
+                Let's talk
+              </button>
+              <div>
+                <i class="fab fa-facebook-f"></i><i class="fab fa-github"></i
+                ><i class="fab fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+          <a class="footerB" href="#start">B</a>
+          <div class="footerLower">
+            <p>Lawrence Ardosa © 2020</p>
+          </div>
+        </div>
+      </section>
+      <div id="darkMode" onclick="darkMode()">
+        <i class="fas fa-lightbulb"></i><i class="far fa-lightbulb"></i>
+      </div>
+      <div id="footerBottom"></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+      <script src="./javascript/index.js"></script>
+    </body>
+  </div>
+</html>

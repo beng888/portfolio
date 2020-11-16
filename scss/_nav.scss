@@ -1,0 +1,120 @@
+nav {
+  .email {
+    border-bottom: 3px solid #e79e2d;
+    padding-bottom: 2px;
+    transition: 0.5s ease-in-out;
+    transform: translateY(0.5rem);
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    z-index: 10;
+    mix-blend-mode: color-burn;
+
+    .far {
+      display: none;
+      font-size: 2rem;
+    }
+
+    &:hover {
+      border-bottom: 3px solid #1861d2;
+    }
+  }
+
+  .logo {
+    transition: all 0.5s ease-in;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+
+    a {
+      &:hover span {
+        &#b {
+          transform: scale(1) !important  ;
+          color: #4d96ff !important;
+        }
+        &#e {
+          transform: translateX(1.3rem) !important;
+        }
+        &#n {
+          transform: translateX(2.6rem) !important;
+        }
+        &#g {
+          transform: translateX(3.9rem) !important;
+        }
+        @include show;
+      }
+    }
+
+    span {
+      transition: all 0.5s ease-out;
+      position: absolute;
+    }
+    #b {
+      color: #4d96ff;
+    }
+    #e {
+      transform: translateX(1.3rem);
+      color: #6cc077;
+    }
+    #n {
+      transform: translateX(2.6rem);
+      color: #dac426;
+    }
+    #g {
+      transform: translateX(3.9rem);
+      color: #e74849;
+    }
+  }
+  .logoAnimate {
+    #b {
+      transform: scale(1.5);
+      color: inherit;
+    }
+    #e,
+    #n,
+    #g {
+      transform: translateX(0) !important;
+      @include hide;
+    }
+  }
+}
+
+#list-group {
+  position: fixed;
+  top: 20vmax;
+  left: 0;
+  z-index: 999;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  .list-group-item {
+    margin: clamp(1rem, 2vmax, 2rem) 0.4vw;
+    border: none;
+    transition: all 0.5s ease-out;
+    padding: 0;
+    background: transparent;
+    color: #2d2d2d;
+
+    .fas {
+      font-size: clamp(1.2rem, 2vw, 2rem);
+      transition: $transition;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.active {
+  .fas {
+    color: var(--bgcolor);
+    transform: scale(1.2);
+    -webkit-text-stroke: 1px #2d2d2d;
+  }
+}
