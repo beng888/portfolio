@@ -92,9 +92,9 @@
       right: 0;
       margin: auto;
       position: absolute;
-      transform: translateY(-70px);
+      transform: translateY(-100px);
       width: fit-content;
-      transition: all 0.3s ease-out 0.5s;
+      transition: all 0.3s cubic-bezier(0.58, 1.96, 0.15, 0.23) 0.7s;
       color: inherit;
     }
     .footerLower {
